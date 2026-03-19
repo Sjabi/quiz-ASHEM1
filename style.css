@@ -1,11 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: bisque;
     text-align: center;
 }
 
 #quiz-container {
-    background: white;
+    background: wheat;
     width: 400px;
     margin: 50px auto;
     padding: 20px;
@@ -18,10 +18,11 @@ button {
     margin: 10px 0;
     padding: 10px;
     cursor: pointer;
+    background: white;
 }
 
 button:hover {
-    background-color: #ddd;
+    background-color: beige;
 }
 
 #feedback {

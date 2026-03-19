@@ -30,7 +30,21 @@ function toonVraag() {
     let antwoordenDiv = document.getElementById("antwoorden");
 
     // TODO: vraag tonen
+    vraagElement.innerText = vragen[huidigeVraag].vraag;
     // TODO: antwoorden genereren (buttons!)
+    antwoordenDiv.innerHTML = ""; // eerst leegmaken
+
+    for (let i = 0; i < vragen[huidigeVraag].antwoorden.length; i++) {
+        let antwoordButton = document.createElement("button");
+        antwoordButton.innerText = vragen[huidigeVraag].antwoorden[i];
+        antwoordButton.onclick = function ()
+        {
+            controleerAntwoord(i);
+        };
+        antwoordenDiv.appendChild(antwoordButton);
+    }
+    document.getElementById("volgende").disabled = true; // volgende knop uitschakelen
+    document.getElementById("feedback").innerText = "Wrong";
 
 }
 
@@ -41,6 +55,11 @@ function controleerAntwoord(index) {
     let feedback = document.getElementById("feedback");
 
     // TODO: controleer of antwoord juist is
+    if (index === vragen[huidigeVraag].correct) {
+        feedback.innerText = "Correct!";
+    } else {
+        feedback.innerText = "Fout!";
+    }
     // TODO: feedback tonen
 
     document.getElementById("volgende").disabled = false;
