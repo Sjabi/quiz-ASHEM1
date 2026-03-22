@@ -1,0 +1,56 @@
+body {
+    background-color: #fff0f5;
+    font-family: Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff66a3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#titel {
+    margin: 0;
+}
+
+main {
+    margin: 20px;
+    padding: 15px;
+}
+
+h2 {
+    color: #ff3385;
+}
+
+h3 {
+    color: purple;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.kaart {
+    border: 2px solid #ff66a3;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    color: #ff66a3;
+}
+
+footer {
+    color: purple;
+    text-decoration: none;
+}
+
+a:hover {
+    color:blue;
+}
