@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ASHEM Space
+    </title>
+     <link rel="stylesheet" href="web.css">
+</head>
+<!-- BODY -->
+<body class = "centered">
+    <header class = "large">
+         <p1>Hello you there, yes you!</p1>
+    </header>
+    <main class = "medium">
+        <h2>Welcome to ASHEM space!</h2>
+        <p> </p>
+        Here you can find all the information about ASHEM and our activities. We are an association that organizes fun and educational events for our members. We also have a Discord server where you can chat with other members and stay updated on our latest news. If you want to join us, please fill out the registration form below.
+        <p></p>
+        <!-- Gebruik de <form> tag om alle data bij elkaar te houden -->
+
+
+        <p></p>
+    <h4>Some Rules</h4>
+        <ol>
+            <li>Everybody is here to learn, be nice to each other</li>
+            <li>Respect others' opinions and ideas</li>
+            <li>Not a rule, but have fun and enjoy the activities we organize</li>
+        </ol>
+    </main>
+    <!-- REGISTRATION -->
+    <main class = "medium">
+         <h2>Registration</h2>
+         <p>To become a member of ASHEM, please fill out the registration form below. We will contact you soon with more information about our activities and events.</p>
+         <!-- Gebruik de <form> tag om alle data bij elkaar te houden -->
+        <form action="registration.html" target="_blank">
+        
+            <!-- Voor- en Achternaam -->
+            <div class="input-group">
+                <label for="fullname">Full name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Isaac Newton" required>
+            </div>
+
+            <!-- Email (Jouw originele veld, nu met label) -->
+            <div class="input-group">
+                <label for="email">E-mailadres</label>
+                <input type="email" id="email" name="email" placeholder="name@example.com/.be" autofocus required>
+            </div>
+
+            <!-- Wachtwoord met minimale lengte voor veiligheid -->
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="At least 8 characters" minlength="8" required>
+            </div>
+
+            <!-- Wachtwoord bevestigen om typfouten te voorkomen -->
+            <div class="input-group">
+                <label for="password_confirm">Confirm Password</label>
+                <input type="password" id="password_confirm" name="password_confirm" placeholder="Repeat password" required>
+            </div>
+
+            <!-- Voorwaarden accepteren -->
+            <div class="checkbox-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the <a href="voorwaarden.html">general terms and conditions</a></label>
+            </div>
+
+            <!-- De verzendknop -->
+            <button type="submit">Register now</button>
+        </form>
+    </main>
+    <!-- FOOTER -->
+    <footer class = "small">
+        <p1>Contact us at:</p1>
+        <a href="https://discord.gg/eDnvt8Er">discord</a>
+        <p>Let's get along well!</p>
+    </footer>
+</body>
+</html>
